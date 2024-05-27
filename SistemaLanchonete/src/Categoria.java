@@ -2,6 +2,8 @@ public class Categoria {
 
     private String Categoria;
 
+    public Categoria(){}
+
     public Categoria(String Categoria) {
         this.Categoria = Categoria;
     }
