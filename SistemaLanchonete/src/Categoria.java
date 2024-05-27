@@ -1,19 +1,19 @@
 public class Categoria {
 
-    private String Categoria;
+    private String categoria;
 
     public Categoria(){}
 
     public Categoria(String Categoria) {
-        this.Categoria = Categoria;
+        this.categoria = categoria;
     }
 
     public String getCategoria() {
-        return Categoria;
+        return categoria;
     }
 
     public void setCategoria(String Categoria) {
-        this.Categoria = Categoria;
+        this.categoria = Categoria;
     }
 }
 
