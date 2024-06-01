@@ -2,6 +2,7 @@ package br.com.lanchonete;
 
 import br.com.lanchonete.dao.CategoriaDAO;
 import br.com.lanchonete.models.Categoria;
+import br.com.lanchonete.services.CategoriaService;
 
 import java.util.List;
 
@@ -18,16 +19,29 @@ public class Main {
         CategoriaDAO.adicionar(c3);
         CategoriaDAO.adicionar(c4);
 
-        CategoriaDAO.remover(c1);
-
-        //System.out.println("ITEM LOCALIZADO: " + encontrado.getNomeCategoria());
-
 
         List<Categoria> lista = CategoriaDAO.buscarTodos();
-        for (Categoria item : lista){
+        for (Categoria item : lista) {
             System.out.println("NOME: " + item.getNomeCategoria());
         }
 
+        System.out.println("\n--------------------------------------------------------------");
+
+        new CategoriaService().adicionar();
+        new CategoriaService().adicionar();
+
+
+        for (Categoria item : lista) {
+            System.out.println("NOME: " + item.getNomeCategoria());
+        }
+
+        new CategoriaService().atualizar();
+
+        System.out.println("\n--------------------------------------------------------------");
+
+        for (Categoria item : lista){
+            System.out.println("NOME: " + item.getNomeCategoria());
+        }
 
     }
 }
