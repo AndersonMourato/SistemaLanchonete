@@ -5,10 +5,6 @@ public class Main {
 
         System.out.println("Fernanda");
 
-        System.out.println("Fernanda");
-        System.out.println("Fernanda");
-        System.out.println("Fernanda");
-
         System.out.println("Teste");
     }
 }
