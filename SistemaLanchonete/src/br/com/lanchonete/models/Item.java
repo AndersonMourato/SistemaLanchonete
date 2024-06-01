@@ -1,3 +1,5 @@
+package br.com.lanchonete.models;
+
 public class Item {
     private int quantidadeItem;
     private double totalValorItem;
